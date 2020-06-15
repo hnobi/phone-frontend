@@ -77,27 +77,36 @@ div.icons {
 
 }
 
+@media screen and (max-width: 1700px) {
+  .container {
+    padding: 0;
+  }
 
-
-@media screen and (max-width: 555px) {
-
-  .main .sidebar {
+  .phones {
     width: 100%;
-    margin: 0 auto;
-  }
-
-  div.icons {
-    display: block;
-    cursor: pointer;
-    font-size: 40px;
-    width: 90%;
-  }
-
-  .sidebar.disactive {
-    display: none;
-  }
-
-  .header-wrapper.disactive {
-    display: none;
-  }
 }
+}
+
+
+  @media screen and (max-width: 555px) {
+
+    .main .sidebar {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    div.icons {
+      display: block;
+      cursor: pointer;
+      font-size: 40px;
+      width: 90%;
+    }
+
+    .sidebar.disactive {
+      display: none;
+    }
+
+    .header-wrapper.disactive {
+      display: none;
+    }
+  }
