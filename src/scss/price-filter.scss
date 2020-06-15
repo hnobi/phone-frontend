@@ -1,0 +1,39 @@
+.price-filter {
+  width: 90%;
+  margin: 20px auto;
+
+  &__values {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__select {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+
+    input {
+      padding: 13px 25px;
+      border: none;
+      outline: none;
+      font-size: 22px;
+
+    }
+
+    label {
+      color: black;
+      font-weight: bolder;
+      font-size: 20px;
+      background-color: #fff;
+      padding-left: 15px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+      width: 180px;
+    }
+
+    button{
+      width: 80%;
+    }
+  }
+}

@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from "../preview.png";
+import "../scss/header.scss";
 
- const Header = () => {
+ const Header = ({display}) => {
   return (
-    <div className='header-wrapper'>
+    <div className={`header-wrapper ${display ? '': 'disactive'}`}>
       <div className='left'>
         <h2>Shop our latest</h2>
         <h2>Available stock here</h2>
@@ -18,7 +19,7 @@ import logo from "../preview.png";
         </div>
       </div>
       <div className='right'>
-        <img src={logo} alt='product-img' />
+        <img src={logo} alt='product-img' className='logo'/>
       </div>
     </div>
   );
