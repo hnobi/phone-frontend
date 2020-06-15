@@ -12,7 +12,7 @@ import PhonesList from './Components/PhonesList';
  const App= () => {
  const [range, setRange] = useState([50, 900]) 
  const onRangeChange = arr => setRange(arr)
- const [show, setShow] = useState(true);
+ const [show, setShow] = useState(false);
 
 const handleStorageClick =(e)=>{
   console.log('----dddd-----', e.target.value)

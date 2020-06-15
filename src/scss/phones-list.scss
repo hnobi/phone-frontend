@@ -1,0 +1,166 @@
+.phones {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 450px;
+  background-color: #1b1b25;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 15px;
+
+  &:hover {
+    transform: scale(1.03);
+    // filter:  brightness(180%);
+    transition: ease-out .1s;
+
+  }
+
+  &__condition {
+    margin-left: auto;
+    border: 2px solid white;
+    padding: 8px 18px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    height: 169px;
+    letter-spacing: 2px;
+    width: 225px;
+
+    img {
+      width: 190px;
+    }
+
+  }
+
+  &__name {
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-bottom: 4px;
+  }
+
+  &__status {
+    margin-left: 20px;
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+
+  &__availability {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+
+  }
+
+  &__price-details {
+    margin-left: 20px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    .phone {
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+  }
+
+  button {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+  .container {
+    padding: 0;
+  }
+
+  .phones {
+    width: 98%;
+  }
+
+  .phone {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+.phones{
+  width: 100%;
+}
+
+  .phone {
+    width: 45%;
+
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .phone__name {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  // .phones {
+  //   width: 98%;
+  // }
+
+  .phone {
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .phones {
+    justify-content: center
+  }
+
+  .phone {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .phones {
+    justify-content: center
+  }
+
+  .phone {
+    min-width: 200px;
+  }
+}

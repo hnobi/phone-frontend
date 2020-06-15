@@ -19,7 +19,7 @@ import "../scss/header.scss";
         </div>
       </div>
       <div className='right'>
-        <img src={logo} alt='product-img' />
+        <img src={logo} alt='product-img' className='logo'/>
       </div>
     </div>
   );
