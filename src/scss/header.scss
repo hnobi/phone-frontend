@@ -1,0 +1,161 @@
+button {
+  border: none;
+  padding: 12px 22px;
+  text-decoration: none;
+  margin: 0 0 0 5px;
+  border-radius: 7px;
+  font-weight: 700;
+  background-color: #1b73e8;
+  letter-spacing: 0.25px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    background-color: white;
+    color: #000000;
+  }
+}
+
+.container {
+  .header-wrapper {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+
+  .right {
+    img {
+      width: 100%;
+    }
+  }
+
+
+  .left {
+    padding-left: 20px;
+    text-transform: uppercase;
+
+    h2 {
+      letter-spacing: 2px;
+      font-size: 45px;
+
+      &:first-child {
+        margin-bottom: -5px;
+      }
+    }
+
+  }
+
+  form {
+    width: 500px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    input[type=text] {
+      flex: 1;
+      padding: 15px 20px;
+      margin: 0 2px;
+      border-radius: 5px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      .arrow {
+        margin-left: 9px;
+        font-size: 20px;
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    .left {
+      padding-left: 0px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      form {
+        width: 420px;
+      }
+    }
+  }
+
+  .request_type h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    .header-wrapper {
+      width: 90%;
+    }
+  }
+
+  form {
+    width: 80%;
+    align-items: center;
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 555px) {
+
+  .container {
+    .header-wrapper {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .left {
+      padding: 0;
+      width: 100%;
+
+      h2 {
+        font-size: 28px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:first-child {
+          margin-bottom: 3px;
+        }
+      }
+
+      form {
+        width: 100%;
+        flex-direction: column;
+
+        input {
+          width: 100%;
+        }
+
+        button.search {
+          margin-top: 10px;
+          width: 60%;
+        }
+      }
+    }
+
+
+  }
+
+  img {
+    display: none
+  }
+
+
+  
+}
