@@ -37,7 +37,7 @@ An Application for showing phone details based on type of requests
 
 ## Overview
 
-I used a loosely-coupled React architecture design to make it easy for the application to scale. 
+I used a loosely-coupled react architecture design to make it easy for the application to scale. 
 The components are independable on one another and all the application logic are done
 in a center component ```app.js ```. The center component is also responsible for state management. I used this component to maintain my state changes instead of using Reduce or ContextApi because the application is fetching data from one endpoint.
 
