@@ -5,11 +5,12 @@ import  { Range } from 'rc-slider';
 import "../scss/price-filter.scss";
 import 'rc-slider/assets/index.css';
 
- const PriceFilter = ({ range, onRangeChange }) => {
-    const [min, max] = range;
-    const handleMinimumChange = e =>onRangeChange([Number(e.target.value), max]);
-    const handleMaximumChange = e => onRangeChange([min, Number(e.target.value)]);
+ const PriceFilter = (props) => {
+   const { range, onRangeChange, getRequestData } = props;
 
+   const [min, max] = range;
+   const handleMinimumChange = (e) => onRangeChange([Number(e.target.value), max]);
+   const handleMaximumChange = (e) => onRangeChange([min, Number(e.target.value)]);
    return (
      <div className='price-filter'>
        <div className='price-filter__values'>
@@ -47,7 +48,9 @@ import 'rc-slider/assets/index.css';
              onChange={handleMaximumChange}
            />
          </label>
-         <button type='submit'>Filter</button>
+         <button type='submit' onClick={getRequestData}>
+           Filter
+         </button>
        </div>
      </div>
    );
