@@ -41,11 +41,11 @@ I used a loosely-coupled react architecture design to make it easy for the appli
 The components are independable on one another and all the application logic are done
 in a center component ```app.js ```. The center component is also responsible for state management. I used this component to maintain my state changes instead of using Reduce or ContextApi because the application is fetching data from one endpoint.
 
-I also make use of SCSS and BEM for better css structure, in order to css follow the Html structure.
+I also make use of SCSS and BEM for better CSS structure, in order for CSS to follow the Html structure.
 It provides benefits of nesting selectors 
 
 
 
 
 ## Author
-Hammed
+ Hammed
